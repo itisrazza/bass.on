@@ -6,9 +6,6 @@ location: Secret Location
 
 kind: Open Invite
 links:
-  facebook: https://www.facebook.com/events/5144907278934429
-  ticket_location: https://www.eventbrite.co.nz/e/basson-bunker-doof-registration-352473717377
-  ticket_buy: https://www.eventbrite.co.nz/e/basson-bunker-doof-registration-352473717377
 
 artists:
   - tunnelvision

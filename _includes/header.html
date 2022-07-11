@@ -1,0 +1,28 @@
+<header class="site-header">
+	<div class="background">
+		<div class="wrapper">
+			{%- assign default_paths = site.pages | map: "path" -%}
+			{%- assign page_paths = site.header_pages | default: default_paths -%}
+			{%- assign titles_size = site.pages | map: "title" | join: "" | size -%}
+
+			<a href="{{ "/" | relative_url }}" class="site-title {% if page.url == "/" %}active{% endif %}" rel="author">{{ site.title | escape }}</a>
+
+			<input type="checkbox" id="nav-dropdown" class="nav-dropdown">
+			<label for="nav-dropdown">
+				<span class="material-icons">menu</span>
+			</label>
+			<div class="dropdown">
+				{%- for path in page_paths -%}
+					{%- assign my_page = site.pages | where: "path", path | first -%}
+					{%- assign classes = "page-link" -%}
+					{% if page.url == my_page.url %}
+						{%- assign classes = "page-link active" -%}
+					{% endif %}
+					{%- if my_page.title -%}
+						<a href="{{ my_page.url | relative_url }}" class="{{ classes }}">{{ my_page.title | escape }}</a>
+					{%- endif -%}
+				{%- endfor -%}
+			</div>
+		</div>
+	</div>
+</header>

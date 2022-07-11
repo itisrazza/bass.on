@@ -1,0 +1,54 @@
+---
+layout: default
+---
+
+<div class="wrapper">
+	{% assign image_url = '/static/banners/' | append: page.slug | append: '.jpg' %}
+	<header class="page-header" style="background-image: url('{{ image_url }}')">
+		<div class="readability-overlay"></div>
+		<div>
+			<h1>{{page.title | escape}}</h1>
+			<p>
+				{{ page.date | date: "%b %d, %Y" }} &middot;
+				{% if page.kind %}
+					{{ page.kind }} &middot;
+				{% endif %}
+				{{ page.location }}
+			</p>
+		</div>
+		<div>
+			{% if page.links.facebook %}<a href="{{ page.links.facebook }}" class="btn">Facebook Event</a>{% endif %}
+			{% if page.links.ticket_location %}<a href="{{ page.links.ticket_location }}" class="btn">Register for location</a>{% endif %}
+			{% if page.links.ticket_buy %}<a href="{{ page.links.ticket_buy }}" class="btn">Buy tickets</a>{% endif %}
+		</div>
+	</header>
+</div>
+<main class="page-content" aria-label="Content">
+	<div class="wrapper">
+		{{content}}
+
+		<h1>Artists</h1>
+		<div class="artist-grid">
+			{% for artist in page.artists %}
+				{% assign artist_data = site.data.artists[artist] %}
+				{% assign image_url = '/static/artists/' | append: artist | append: '.jpg' %}
+
+				<div class="artist-card">
+					<div class="artist-avatar">
+						<img src="{{ image_url }}" alt="" width="48" height="48">
+					</div>
+					<div class="artist-info">
+						<div class="artist-stage-name">{{artist_data.stage_name}}</div>
+						<div class="artist-links">
+							{% if artist_data.facebook %}<a href="{{artist_data.facebook}}" href="_blank"><i class="fa-brands fa-facebook"></i></a>{% endif %}
+							{% if artist_data.instagram %}<a href="{{artist_data.instagram}}" href="_blank"><i class="fa-brands fa-instagram"></i></a>{% endif %}
+							{% if artist_data.soundcloud %}<a href="{{artist_data.soundcloud}}" href="_blank"><i class="fa-brands fa-soundcloud"></i></a>{% endif %}
+							{% if artist_data.bandcamp %}<a href="{{artist_data.bandcamp}}" href="_blank"><i class="fa-brands fa-bandcamp"></i></a>{% endif %}
+							{% if artist_data.spotify %}<a href="{{artist_data.spotify}}" href="_blank"><i class="fa-brands fa-spotify"></i></a>{% endif %}
+						</div>
+					</div>
+				</div>
+			{% endfor %}
+		</div>
+	</div>
+</main>

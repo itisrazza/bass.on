@@ -1,0 +1,30 @@
+---
+layout: default
+---
+
+<div class="wrapper">
+	<header class="page-header">
+		<div class="home-animation">
+			<div class="switch">
+				<div class="nub"></div>
+			</div>
+			<div class="basson">BASS:ON</div>
+		</div>
+
+		<h1>Turning up the BASS to 11</h1>
+		<p>We are BASS:ON, (except where the generator goes down, it which case we're BASS:OFF) where we turn bass boost up to 11 and rave into the night and dawn. We run bunker raves every now and then.</p>
+	</header>
+</div>
+<main class="page-content" aria-label="Content">
+	<div class="wrapper">{{content}}</div>
+	<div class="wrapper">
+		<h1>Recent Events</h1>
+
+		<div class="event-grid">
+			{% assign events = site.events | reverse | slice: 0, 3 %}
+			{% for event in events %}
+				{% include event_card.html %}
+			{% endfor %}
+		</div>
+	</div>
+</main>

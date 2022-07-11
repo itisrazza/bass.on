@@ -1,0 +1,75 @@
+.page-home {
+	.home-animation {
+		position: relative;
+		text-align: center;
+		display: block;
+		height: 32px;
+		transform: scale(2);
+		padding: 2em 0;
+		transform-origin: top;
+
+		.switch {
+			position: absolute;
+			display: block;
+			top: 0;
+			left: 50%;
+			height: 32px;
+			width: 64px;
+			transform: translateX(-32px);
+			border-radius: 16px;
+			z-index: 11;
+			animation: home-animation-switch .8s cubic-bezier(0.22, 0.61, 0.36, 1) 1s 1 normal forwards;
+			background: #888;
+
+			.nub {
+				position: absolute;
+				display: block;
+				width: 24px;
+				height: 24px;
+				background-color: #fff;
+				top: 4px;
+				left: 4px;
+				border-radius: 50%;
+				animation: home-animation-switch-nub .8s cubic-bezier(0.22, 0.61, 0.36, 1) 1s 1 normal forwards;
+			}
+		}
+
+		.basson {
+			display: block;
+			position: absolute;
+			top: 3px; left: 0; right: 0; bottom: 0;
+			font-family: $head-font-family;
+			font-size: 24px;
+			text-align: center;
+			z-index: 10;
+			animation: home-animation-basson .8s cubic-bezier(0.22, 0.61, 0.36, 1) 1s 1 normal forwards;
+			transform: translateX(20px);
+			opacity: 0;
+		}
+	}
+}
+
+@keyframes home-animation-switch {
+	10% {
+		opacity: 1;
+	}
+
+	100% {
+		background: green;
+		opacity: 0;
+		transform: translateX(-32px - 32px);
+	}
+}
+
+@keyframes home-animation-switch-nub {
+	100% {
+		left: 64px - 24px - 4px;
+	}
+}
+
+@keyframes home-animation-basson {
+	100% {
+		transform: translateX(0);
+		opacity: 1;
+	}
+}

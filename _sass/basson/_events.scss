@@ -24,7 +24,7 @@
 	}
 }
 
-.artist-grid {
+.artist-grid, .event-grid {
 	display: grid;
 	gap: 8px;
 	margin: 1em 0;
@@ -88,20 +88,6 @@
 }
 
 // Event List
-
-.event-grid {
-	display: grid;
-	gap: 8px;
-	margin: 1em 0;
-
-	@media screen and (min-width: $md-break) {
-		grid-template-columns: auto auto;
-	}
-
-	@media screen and (min-width: $lg-break) {
-		grid-template-columns: auto auto auto;
-	}
-}
 
 .event-card {
 	display: block;

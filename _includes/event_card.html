@@ -1,0 +1,8 @@
+<a class="event-card" href="{{ event.url | relative_url }}">
+	{% assign image_url = '/static/banners/' | append: event.slug | append: '.jpg' %}
+
+	<div class="event-hero" style="background-image: url('{{image_url | relative_path }}')"></div>
+	<span class="event-date">{{ event.date | date: "%b %d, %Y" }} </span>
+	<div class="event-title">{{ event.title }}</div>
+	<div class="event-description">{{ event.excerpt }}</div>
+</a>

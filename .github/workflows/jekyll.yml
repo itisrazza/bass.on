@@ -24,3 +24,5 @@ jobs:
       with:
         build_dir: ./_site
         # fqdn: # optional
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

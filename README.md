@@ -14,9 +14,9 @@ I've taken care so it's maintainable as much as possible for the GitHub website.
 * Add the artists' details to [`_data/artists.yml`](_data/artists.yml) (look for `example:`).
 * Add an avatar pic to [`static/artists/%id%.jpg`](static/artists).
 
-## Publish a preview
+## Preview your changes
 
-This will be a triggerable action in the future.
+After your commit, the changes should be visible on https://bass-on-draft.razza.io.
 
 ## Publish to `bass-on.nz`
 

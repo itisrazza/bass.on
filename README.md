@@ -20,7 +20,7 @@ After your commit, the changes should be visible on https://bass-on-draft.razza.
 
 ## Publish to `bass-on.nz`
 
-This will be a triggerable action in the future.
+Go to [this page](https://github.com/itisrazza/bass.on/actions/workflows/publish.yml), click Run Workflow, then in the pulldown, click Run Workflow.
 
 ---
 

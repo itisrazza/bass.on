@@ -1,5 +1,6 @@
 ---
 layout: event
+title: Example Rave
 published: false # remove this line before publishing
 date: 2032-01-19
 location: Unspecified Location

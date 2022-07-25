@@ -5,7 +5,7 @@
 			{%- assign page_paths = site.header_pages | default: default_paths -%}
 			{%- assign titles_size = site.pages | map: "title" | join: "" | size -%}
 
-			<a href="{{ "/" | relative_url }}" class="site-title {% if page.url == "/" %}active{% endif %}" rel="author">{{ site.title | escape }}</a>
+			<a href="{{ "/" | relative_url }}" class="site-title {% if page.url == "/" %}active{% endif %}" rel="author">{%- comment -%}<img src="{{ '/assets/logo.png' | relative_path }}" height="16" alt="{%- endcomment -%}{{ site.title | escape }}{%- comment -%}">{%- endcomment -%}</a>
 
 			<input type="checkbox" id="nav-dropdown" class="nav-dropdown">
 			<label for="nav-dropdown">

@@ -51,7 +51,7 @@ a {
 
 .site-header {
 	position: relative;
-	
+
 	a {
 		display: inline-flex;
 		justify-content: center;
@@ -81,7 +81,10 @@ a {
 	> .background {
 		display: block;
 		position: relative;
-		background: linear-gradient(to right, #4A148C, #004D40);
+		background-color: #421E1E;
+		background-image: url("/assets/texture.jpg");
+		background-size: cover;
+		background-position: center;
 		border-bottom: 1px solid rgba(white, 0.2);
 		z-index: 101;
 	}
@@ -156,11 +159,17 @@ a {
 
 .page-header {
 	display: block;
-	background: #313131;
+	background: #421E1E;
 	color: white;
 
 	margin: 16px -24px;
 	padding: 32px 24px;
 	border-radius: 16px;
+
+	text-shadow: 2px 2px 0 #421E1E;
+
+	.btn {
+		text-shadow: none;
+	}
 }
 

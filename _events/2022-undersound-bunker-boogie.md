@@ -1,6 +1,6 @@
 ---
 layout: event
-title: "Undersound x BASS:ON: Bunker Boogie"
+title: "UNDERSOUND x BASS:ON: Bunker Boogie"
 date: 2022-09-10
 location: Secret Location
 
@@ -12,14 +12,16 @@ links:
 artists:
   # links to artists, use their id from _data/artists.yml
   # and make sure an avatar is in static/artists/{{artist.id}}.jpg
-  - jogle
-  - ryan_s
-  - tunnelvision
-  - not_a_robot
-  - sammy_j
-  - freemxn
-  - wildstorm
   - habit
+  - wildstorm
+  - sammy_j
+  - not_a_robot
+  - tunnelvision
+  - jogle
+  - freemxn
+  - ryan_s
 ---
 
-An underground (litterally) gig set in one of wellies finest bunkers, bust out your best moves to absolutely filthy chunes all night.
+An underground (literally) gig set in one of wellies finest bunkers, bust out your best moves to absolutely filthy chunes all night.
+
+This is a ticketed event, we'll be checking IDs against a list of pre-approved entries. Door sales will be available.

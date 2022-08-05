@@ -3,6 +3,12 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	{%- seo -%}
+	{% if page.collection == "events" %}
+		{% assign image_url = '/static/banners/' | append: page.slug | append: '.jpg' %}
+		<meta property="og:image" content="{{ image_url | absolute_url }}">
+	{% else %}
+		<meta property="og:image" content="{{ '/static/banners/2022-bunker-doof.jpg' | absolute_url }}">
+	{% endif %}
 
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

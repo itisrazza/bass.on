@@ -167,9 +167,16 @@ a {
 	border-radius: 16px;
 
 	text-shadow: 2px 2px 0 #421E1E;
+	transition: all .2s;
 
 	.btn {
 		text-shadow: none;
+	}
+
+	@media screen and (max-width: 380px) {
+		margin: 0 -48px;
+		padding: 32px 48px;
+		border-radius: 0;
 	}
 }
 

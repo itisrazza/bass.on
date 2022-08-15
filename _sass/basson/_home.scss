@@ -1,4 +1,6 @@
 .page-home {
+	overflow-x: hidden;
+
 	.home-animation {
 		position: relative;
 		text-align: center;
@@ -45,6 +47,12 @@
 			animation: home-animation-basson .8s cubic-bezier(0.22, 0.61, 0.36, 1) 1s 1 normal forwards;
 			transform: translateX(20px);
 			opacity: 0;
+
+			@media screen and (max-width: 640px) {
+				img {
+					max-height: 2vh;
+				}
+			}
 		}
 	}
 }

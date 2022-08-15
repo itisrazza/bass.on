@@ -18,9 +18,7 @@ I've taken care so it's maintainable as much as possible for the GitHub website.
 
 After your commit, the changes should be visible on https://bass-on-draft.razza.io.
 
-## Publish to `bass-on.nz`
-
-Go to [this page](https://github.com/itisrazza/bass.on/actions/workflows/publish.yml), click Run Workflow, then in the pulldown, click Run Workflow.
+You can manually force a publish by going to [this page](https://github.com/itisrazza/bass.on/actions/workflows/jekyll.yml), click Run Workflow, then in the pulldown, click Run Workflow.
 
 ---
 

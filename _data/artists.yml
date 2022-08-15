@@ -60,3 +60,13 @@ outlaw:
   stage_name: ouTLaw
   soundcloud: https://soundcloud.com/tlaw2000
   tour: AKL
+
+# This example shows what is currently implemented
+example:
+  stage_name: Example DJ
+  tour: NZ  # if they're not from around here, like Lawrie
+  facebook: https://facebook.com/example
+  instagram: https://instagram.com/example
+  soundcloud: https://soundcloud.com/example
+  bandcamp: https://example.bandcamp.com/
+  spotify: https://open.spotify.com/artist/1234

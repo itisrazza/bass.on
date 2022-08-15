@@ -5,7 +5,7 @@ published: false # remove this line before publishing
 date: 2032-01-19
 location: Unspecified Location
 
-kind: Over Invite   # eg. Public, Open Invite, Private
+kind: Open Invite   # eg. Public, Open Invite, Private
 links:
   facebook: https://www.facebook.com/events/1234
   ticket_location: https://www.eventbrite.co.nz/e/basson-1234   # link to location registration

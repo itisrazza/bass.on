@@ -69,6 +69,11 @@
 			font-family: $head-font-family;
 			font-size: 20px;
 			font-weight: bold;
+
+			.artist-tour {
+				font-size: 14px;
+				opacity: 0.8;
+			}
 		}
 
 		.artist-name {

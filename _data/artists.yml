@@ -2,8 +2,6 @@ jogle:
   stage_name: Jogle
   name: Joe Ogle
   basson: true
-  description: >-
-    shattering perspectives, and crafting an abstract atmosphere of suspense
   instagram: https://www.instagram.com/joglemusic/
   soundcloud: https://soundcloud.com/joglemusic
 
@@ -24,8 +22,6 @@ habit:
 chano:
   stage_name: Chano
   name: Lawrence Chan
-  description: >-
-    
   facebook: https://www.facebook.com/chanomixes
   instagram: https://www.instagram.com/heyitschan0/
   soundcloud: https://soundcloud.com/chano_mixes
@@ -33,8 +29,6 @@ chano:
 tonin:
   stage_name: Tonin
   name: Joey Townsend
-  description: >-
-
   website: https://linktr.ee/tonin_nz
   facebook: https://www.facebook.com/toninNZ/
   instagram: https://www.instagram.com/tonin_nz/
@@ -46,6 +40,7 @@ tunnelvision:
 
 not_a_robot:
   stage_name: Not a Robot
+  soundcloud: https://soundcloud.com/not-robot-679541768
 
 wildstorm:
   stage_name: Wildstorm
@@ -58,3 +53,8 @@ sammy_j:
 
 ryan_s:
   stage_name: Ryan S
+
+outlaw:
+  stage_name: ouTLaw
+  soundcloud: https://soundcloud.com/tlaw2000
+  tour: AKL

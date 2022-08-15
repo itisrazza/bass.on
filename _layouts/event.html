@@ -38,7 +38,12 @@ layout: default
 						<img src="{{ image_url }}" alt="" width="64" height="64">
 					</div>
 					<div class="artist-info">
-						<div class="artist-stage-name">{{artist_data.stage_name}}</div>
+						<div class="artist-stage-name">
+							{{artist_data.stage_name}}
+							{% if artist_data.tour %}
+								<span class="artist-tour">{{ artist_data.tour }}</span>
+							{% endif %}
+						</div>
 						<div class="artist-links">
 							{% if artist_data.facebook %}<a href="{{artist_data.facebook}}" href="_blank"><i class="fa-brands fa-facebook"></i></a>{% endif %}
 							{% if artist_data.instagram %}<a href="{{artist_data.instagram}}" href="_blank"><i class="fa-brands fa-instagram"></i></a>{% endif %}

@@ -20,6 +20,7 @@ artists:
   - jogle
   - freemxn
   - ryan_s
+  - outlaw
 ---
 
 An underground (literally) gig set in one of wellies finest bunkers, bust out your best moves to absolutely filthy chunes all night.

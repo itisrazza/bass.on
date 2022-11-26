@@ -23,6 +23,6 @@ artists:
   # - outlaw
 ---
 
-Presented in collaboration with UNDERSOUND. A perfectly legal gig at Birdcage, bust out your best moves to absolutely filthy DnB chunes all night.
+*DOOF SUCCESSFUL.* Presented in collaboration with UNDERSOUND. A perfectly legal gig at Birdcage, bust out your best moves to absolutely filthy DnB chunes all night.
 
 This is a ticketed R18 event, we'll be checking IDs against a list of pre-approved entries. Door sales will be available if capacity allows.

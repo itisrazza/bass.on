@@ -4,7 +4,7 @@ layout: default
 
 <div class="wrapper">
 	{% assign image_url = '/static/banners/' | append: page.slug | append: '.jpg' %}
-	<header class="page-header" style="background-image: url('{{ image_url }}')">
+	<header class="page-header" style="background-image: url('{{ image_url | relative_url }}')">
 		<div class="readability-overlay"></div>
 		<div>
 			<h1 class="event-title">{{page.title | escape}}</h1>
@@ -36,7 +36,7 @@ layout: default
 
 			<div class="artist-card">
 				<div class="artist-avatar">
-					<img src="{{ image_url }}" alt="" width="64" height="64">
+					<img src="{{ image_url | relative_url }}" alt="" width="64" height="64">
 				</div>
 				<div class="artist-info">
 					<div class="artist-stage-name">

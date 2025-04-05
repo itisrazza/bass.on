@@ -1,7 +1,7 @@
 title: BASS:ON
 description: We are BASS:ON, where we turn bass boost up to 11 and rave into the night and dawn. We run bunker raves every now and then.
-baseurl: "/"
-url: "https://bass-on.nz"
+baseurl: "/bass.on"
+url: "https://itisrazza.github.io"
 future: true
 
 collections:
